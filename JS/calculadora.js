@@ -4,8 +4,8 @@ pantalla.textContent = '0'
 
 function calculadora() {
     if (!botones) return
-    botones.addEventListener('click', (e) => {
-        
+    botones.addEventListener('click', function hola(e) {
+
         console.log(e);
         var elemento = e.target, elTipoDeElemento = t.dataset
         // Detectar si se pulsó un número
